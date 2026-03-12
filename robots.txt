@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://edd05-cloud.github.io/Biodent-Site/sitemap.xml
