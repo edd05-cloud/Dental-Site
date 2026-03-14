@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+  <title>Términos de Servicio | Terms of Service — Biodent Clínica Odontológica</title>
+  <meta name="description" content="Términos y condiciones de uso del sitio web y servicios de Biodent Clínica Odontológica. Conforme al Código Civil RD, Ley 358-05 y normativa internacional."/>
+  <meta name="robots" content="noindex, follow"/>
+  <link rel="canonical" href="https://edd05-cloud.github.io/Dental-Site/terms-of-service.html"/>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦷</text></svg>"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/></noscript>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --cream: #f9f5f0;
+      --bone: #ede8e0;
+      --sage: #8aab96;
+      --sage-dark: #5c8a6e;
+      --charcoal: #2a2a2a;
+      --mid: #6b6b6b;
+      --light: #a8a8a8;
+      --accent: #c4a97a;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'DM Sans', system-ui, sans-serif;
+      background: var(--cream);
+      color: var(--charcoal);
+      line-height: 1.7;
+    }
+
+    /* ── NAV ── */
+    .pp-nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(249,245,240,0.96);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      padding: 1.2rem 6%;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 1rem; flex-wrap: wrap;
+    }
+    .pp-nav-logo {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.4rem; font-weight: 600;
+      color: var(--charcoal); text-decoration: none;
+      letter-spacing: 0.03em;
+    }
+    .pp-nav-logo span { color: var(--sage-dark); }
+    .pp-nav-right { display: flex; align-items: center; gap: 1.5rem; }
+    .pp-nav-back {
+      font-size: 0.82rem; font-weight: 500;
+      color: var(--sage-dark); text-decoration: none;
+      display: flex; align-items: center; gap: 0.4rem;
+      transition: gap 0.2s;
+    }
+    .pp-nav-back:hover { gap: 0.65rem; }
+    .lang-btns { display: flex; gap: 0.4rem; }
+    .lang-btn {
+      background: none; border: 1.5px solid var(--bone);
+      border-radius: 50px; padding: 0.3rem 0.75rem;
+      font-size: 0.75rem; font-weight: 600; cursor: pointer;
+      color: var(--mid); transition: all 0.2s; font-family: inherit;
+    }
+    .lang-btn.active {
+      background: var(--sage-dark); border-color: var(--sage-dark);
+      color: white;
+    }
+
+    /* ── HERO ── */
+    .pp-hero {
+      background: var(--charcoal);
+      padding: 4.5rem 6% 3.5rem;
+      position: relative; overflow: hidden;
+    }
+    .pp-hero::before {
+      content: '§';
+      position: absolute; right: 6%; top: 50%;
+      transform: translateY(-50%);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 18rem; font-weight: 300;
+      color: rgba(255,255,255,0.03);
+      line-height: 1; pointer-events: none;
+      user-select: none;
+    }
+    .pp-hero::after {
+      content: '';
+      position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
+      background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    }
+    .pp-hero-tag {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--accent);
+      margin-bottom: 1.2rem;
+    }
+    .pp-hero-tag::before { content: ''; width: 24px; height: 1px; background: var(--accent); display: block; }
+    .pp-hero h1 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      font-weight: 600; color: white; line-height: 1.15;
+      margin-bottom: 1rem; position: relative;
+    }
+    .pp-hero h1 em { color: var(--accent); font-style: italic; }
+    .pp-hero-sub {
+      font-size: 0.9rem; color: rgba(255,255,255,0.55);
+      max-width: 560px; line-height: 1.7; position: relative;
+    }
+    .pp-hero-meta {
+      display: flex; gap: 2rem; flex-wrap: wrap;
+      font-size: 0.78rem; color: rgba(255,255,255,0.4);
+      margin-top: 1.8rem; position: relative;
+    }
+    .pp-hero-meta span { display: flex; align-items: center; gap: 0.4rem; }
+
+    /* ── LAYOUT ── */
+    .pp-layout {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 4rem 6% 6rem;
+      display: grid;
+      grid-template-columns: 230px 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    /* ── SIDEBAR ── */
+    .pp-toc { position: sticky; top: 90px; }
+    .pp-toc h4 {
+      font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--light); margin-bottom: 1rem;
+    }
+    .pp-toc ul { list-style: none; }
+    .pp-toc li { margin-bottom: 0.3rem; }
+    .pp-toc a {
+      font-size: 0.79rem; color: var(--mid); text-decoration: none;
+      display: block; padding: 0.28rem 0.6rem;
+      border-left: 2px solid transparent;
+      transition: all 0.2s; border-radius: 0 4px 4px 0;
+    }
+    .pp-toc a:hover, .pp-toc a.active {
+      color: var(--sage-dark);
+      border-left-color: var(--sage-dark);
+      background: rgba(92,138,110,0.06);
+    }
+    .pp-toc-divider { height: 1px; background: var(--bone); margin: 1rem 0; }
+    .pp-toc-badges { display: flex; flex-direction: column; gap: 0.45rem; }
+    .toc-badge {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      font-size: 0.64rem; font-weight: 700; letter-spacing: 0.07em;
+      text-transform: uppercase; padding: 4px 10px; border-radius: 20px;
+      font-family: 'DM Sans', sans-serif;
+    }
+    .toc-badge.dr  { background: rgba(0,100,200,0.08); color: #0064c8; border: 1px solid rgba(0,100,200,0.15); }
+    .toc-badge.int { background: rgba(92,138,110,0.1); color: var(--sage-dark); border: 1px solid rgba(92,138,110,0.2); }
+    .toc-badge.eu  { background: rgba(0,50,160,0.08); color: #0032a0; border: 1px solid rgba(0,50,160,0.15); }
+
+    /* ── CONTENT ── */
+    .pp-content section {
+      margin-bottom: 3.5rem;
+      padding-bottom: 3.5rem;
+      border-bottom: 1px solid var(--bone);
+      scroll-margin-top: 100px;
+    }
+    .pp-content section:last-child { border-bottom: none; margin-bottom: 0; }
+
+    .pp-content h2 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.8rem; font-weight: 600;
+      color: var(--charcoal); margin-bottom: 1.1rem; line-height: 1.2;
+      display: flex; align-items: center; gap: 0.7rem; flex-wrap: wrap;
+    }
+    .sec-num {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em;
+      background: var(--accent); color: white;
+      padding: 2px 9px; border-radius: 20px;
+      font-family: 'DM Sans', sans-serif; flex-shrink: 0;
+    }
+    .pp-content h3 {
+      font-size: 0.98rem; font-weight: 600;
+      color: var(--charcoal); margin: 1.6rem 0 0.5rem;
+    }
+    .pp-content p {
+      font-size: 0.9rem; color: var(--mid);
+      margin-bottom: 0.9rem; line-height: 1.75;
+    }
+    .pp-content ul {
+      margin: 0.5rem 0 1rem 1.2rem;
+    }
+    .pp-content ul li {
+      font-size: 0.88rem; color: var(--mid);
+      margin-bottom: 0.45rem; line-height: 1.65;
+    }
+    .pp-content ol {
+      margin: 0.5rem 0 1rem 1.4rem;
+    }
+    .pp-content ol li {
+      font-size: 0.88rem; color: var(--mid);
+      margin-bottom: 0.5rem; line-height: 1.65;
+    }
+    .pp-content strong { color: var(--charcoal); }
+    .pp-content a { color: var(--sage-dark); }
+    .pp-content a:hover { color: var(--charcoal); }
+
+    /* ── LAW TAGS ── */
+    .law-tag {
+      display: inline-block; font-size: 0.6rem; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      padding: 2px 7px; border-radius: 20px; margin-left: 0.35rem;
+      vertical-align: middle; font-family: 'DM Sans', sans-serif;
+    }
+    .law-dr  { background: rgba(0,100,200,0.1); color: #0064c8; }
+    .law-int { background: rgba(92,138,110,0.12); color: var(--sage-dark); }
+    .law-eu  { background: rgba(0,50,160,0.1); color: #0032a0; }
+    .law-acc { background: rgba(196,169,122,0.15); color: #8a6a30; }
+
+    /* ── HIGHLIGHT BOX ── */
+    .highlight-box {
+      background: white; border: 1.5px solid var(--bone);
+      border-left: 4px solid var(--sage-dark);
+      border-radius: 12px; padding: 1.2rem 1.4rem;
+      margin: 1.2rem 0;
+    }
+    .highlight-box.warning {
+      border-left-color: var(--accent);
+      background: rgba(196,169,122,0.05);
+    }
+    .highlight-box.important {
+      border-left-color: #c0392b;
+      background: rgba(192,57,43,0.04);
+    }
+    .highlight-box p { margin: 0; font-size: 0.87rem; }
+    .highlight-box strong { color: var(--charcoal); }
+
+    /* ── TWO-COL LIST ── */
+    .two-col-list {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 0.5rem 2rem; margin: 0.8rem 0 1rem;
+    }
+    .two-col-list li {
+      font-size: 0.87rem; color: var(--mid);
+      list-style: none; padding-left: 1.2rem; position: relative;
+      line-height: 1.55;
+    }
+    .two-col-list li::before {
+      content: '→';
+      position: absolute; left: 0;
+      color: var(--sage-dark); font-size: 0.75rem; top: 3px;
+    }
+
+    /* ── SERVICE GRID ── */
+    .service-list-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 0.8rem; margin: 1rem 0;
+    }
+    .service-item {
+      background: white; border: 1px solid var(--bone);
+      border-radius: 12px; padding: 0.9rem 1rem;
+      font-size: 0.82rem; color: var(--mid);
+      display: flex; align-items: center; gap: 0.5rem;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .service-item:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.07); transform: translateY(-2px); }
+    .service-item-icon { font-size: 1.1rem; flex-shrink: 0; }
+    .service-item strong { display: block; color: var(--charcoal); font-size: 0.82rem; margin-bottom: 1px; }
+
+    /* ── CONTACT BOX ── */
+    .contact-box {
+      background: var(--charcoal); border-radius: 20px;
+      padding: 2rem 2.5rem; color: white;
+    }
+    .contact-box h3 { color: white; font-size: 1.15rem; margin-bottom: 1rem; }
+    .contact-box p { color: rgba(255,255,255,0.65); font-size: 0.87rem; margin-bottom: 0.5rem; }
+    .contact-box a { color: var(--sage); }
+    .contact-box strong { color: white; }
+
+    /* ── ACCEPTANCE BANNER ── */
+    .acceptance-banner {
+      background: linear-gradient(135deg, var(--sage-dark), #3d6b52);
+      border-radius: 16px; padding: 1.5rem 2rem;
+      color: white; margin-bottom: 2rem;
+      display: flex; align-items: flex-start; gap: 1rem;
+    }
+    .acceptance-banner-icon { font-size: 2rem; flex-shrink: 0; margin-top: 2px; }
+    .acceptance-banner h4 { color: white; font-size: 0.95rem; margin-bottom: 0.3rem; }
+    .acceptance-banner p { color: rgba(255,255,255,0.8); font-size: 0.83rem; line-height: 1.55; margin: 0; }
+
+    /* ── TABLE ── */
+    .tos-table {
+      width: 100%; border-collapse: collapse;
+      margin: 1rem 0; font-size: 0.83rem;
+    }
+    .tos-table th {
+      background: var(--charcoal); color: white;
+      padding: 0.65rem 1rem; text-align: left;
+      font-size: 0.72rem; font-weight: 600;
+      letter-spacing: 0.06em; text-transform: uppercase;
+    }
+    .tos-table th:first-child { border-radius: 10px 0 0 0; }
+    .tos-table th:last-child  { border-radius: 0 10px 0 0; }
+    .tos-table td {
+      padding: 0.7rem 1rem; border-bottom: 1px solid var(--bone);
+      color: var(--mid); vertical-align: top;
+    }
+    .tos-table tr:hover td { background: rgba(92,138,110,0.04); }
+
+    /* ── FOOTER ── */
+    .pp-footer {
+      background: var(--charcoal); padding: 2rem 6%;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 1rem;
+      font-size: 0.78rem; color: rgba(255,255,255,0.4);
+    }
+    .pp-footer a { color: rgba(255,255,255,0.5); text-decoration: none; }
+    .pp-footer a:hover { color: var(--sage); }
+
+    /* ── LANGUAGE SECTIONS ── */
+    [lang-section="es"] { display: block; }
+    [lang-section="en"] { display: none; }
+    body.lang-en [lang-section="es"] { display: none; }
+    body.lang-en [lang-section="en"] { display: block; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .pp-layout { grid-template-columns: 1fr; gap: 2rem; }
+      .pp-toc { position: static; display: none; }
+      .two-col-list { grid-template-columns: 1fr; }
+      .service-list-grid { grid-template-columns: 1fr 1fr; }
+      .pp-hero::before { display: none; }
+    }
+    @media (max-width: 480px) {
+      .service-list-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body class="lang-es">
+
+<!-- NAV -->
+<nav class="pp-nav">
+  <a href="index.html" class="pp-nav-logo">Biodent <span>Clínica</span></a>
+  <div class="pp-nav-right">
+    <div class="lang-btns">
+      <button class="lang-btn active" id="btnES" onclick="setLang('es')">🇩🇴 ES</button>
+      <button class="lang-btn" id="btnEN" onclick="setLang('en')">🇺🇸 EN</button>
+    </div>
+    <a href="index.html" class="pp-nav-back">← <span id="backLabel">Volver al Inicio</span></a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="pp-hero">
+  <div class="pp-hero-tag">Biodent Clínica Odontológica</div>
+  <h1>
+    <span lang-section="es">Términos de <em>Servicio</em></span>
+    <span lang-section="en">Terms of <em>Service</em></span>
+  </h1>
+  <p class="pp-hero-sub">
+    <span lang-section="es">Al acceder y usar este sitio web o nuestros servicios dentales, aceptas los siguientes términos y condiciones en su totalidad.</span>
+    <span lang-section="en">By accessing and using this website or our dental services, you fully accept the following terms and conditions.</span>
+  </p>
+  <div class="pp-hero-meta">
+    <span>📅 <span lang-section="es">Vigente desde: 14 de marzo, 2026</span><span lang-section="en">Effective: March 14, 2026</span></span>
+    <span>📍 Santo Domingo, República Dominicana</span>
+    <span>⚖️ <span lang-section="es">Código Civil RD · Ley 358-05 · COLODO</span><span lang-section="en">DR Civil Code · Law 358-05 · COLODO</span></span>
+  </div>
+</div>
+
+<!-- MAIN LAYOUT -->
+<div class="pp-layout">
+
+  <!-- SIDEBAR TOC -->
+  <aside class="pp-toc" aria-label="Table of contents">
+    <h4 id="toc-title">Contenido</h4>
+    <ul id="toc-list">
+      <li><a href="#s1">1. Aceptación</a></li>
+      <li><a href="#s2">2. Servicios</a></li>
+      <li><a href="#s3">3. Citas y Cancelaciones</a></li>
+      <li><a href="#s4">4. Pagos y Precios</a></li>
+      <li><a href="#s5">5. Responsabilidades</a></li>
+      <li><a href="#s6">6. Propiedad Intelectual</a></li>
+      <li><a href="#s7">7. Privacidad</a></li>
+      <li><a href="#s8">8. Conducta del Usuario</a></li>
+      <li><a href="#s9">9. Limitación de Responsabilidad</a></li>
+      <li><a href="#s10">10. Ley Aplicable</a></li>
+      <li><a href="#s11">11. Menores de Edad</a></li>
+      <li><a href="#s12">12. Cambios</a></li>
+      <li><a href="#s13">13. Contacto</a></li>
+    </ul>
+    <div class="pp-toc-divider"></div>
+    <div class="pp-toc-badges">
+      <span class="toc-badge dr">🇩🇴 Código Civil RD</span>
+      <span class="toc-badge dr">🇩🇴 Ley 358-05</span>
+      <span class="toc-badge int">🦷 COLODO</span>
+      <span class="toc-badge eu">🇪🇺 Directiva EU</span>
+    </div>
+  </aside>
+
+  <!-- CONTENT -->
+  <main class="pp-content">
+
+    <!-- ACCEPTANCE BANNER -->
+    <div class="acceptance-banner">
+      <div class="acceptance-banner-icon">⚖️</div>
+      <div>
+        <h4 lang-section="es">Acuerdo vinculante</h4>
+        <h4 lang-section="en">Binding Agreement</h4>
+        <p lang-section="es">Al usar este sitio web, solicitar una cita, o comunicarte con nosotros por WhatsApp o teléfono, confirmas que has leído, entendido y aceptado estos Términos de Servicio. Si no estás de acuerdo, por favor no utilices nuestros servicios.</p>
+        <p lang-section="en">By using this website, requesting an appointment, or communicating with us via WhatsApp or phone, you confirm you have read, understood, and accepted these Terms of Service. If you disagree, please do not use our services.</p>
+      </div>
+    </div>
+
+    <!-- 1. ACCEPTANCE -->
+    <section id="s1">
+      <h2><span class="sec-num">01</span> <span lang-section="es">Aceptación de los Términos</span><span lang-section="en">Acceptance of Terms</span></h2>
+      <div lang-section="es">
+        <p>Estos Términos de Servicio ("Términos") constituyen un acuerdo legal entre tú ("Usuario") y <strong>Biodent Clínica Odontológica</strong> ("Clínica", "nosotros"), con domicilio en Center 2, Av. Rómulo Betancourt 1304, Santo Domingo 10111, República Dominicana.</p>
+        <p>Estos Términos se rigen por el <strong>Código Civil de la República Dominicana</strong> <span class="law-tag law-dr">RD</span>, la <strong>Ley No. 358-05 sobre Protección de los Derechos del Consumidor o Usuario</strong> <span class="law-tag law-dr">RD</span>, el <strong>Código de Ética del Colegio Dominicano de Odontólogos (COLODO)</strong> <span class="law-tag law-int">COLODO</span>, y demás normativa aplicable.</p>
+      </div>
+      <div lang-section="en">
+        <p>These Terms of Service ("Terms") constitute a legal agreement between you ("User") and <strong>Biodent Clínica Odontológica</strong> ("Clinic", "we", "us"), with address at Center 2, Av. Rómulo Betancourt 1304, Santo Domingo 10111, Dominican Republic.</p>
+        <p>These Terms are governed by the <strong>Civil Code of the Dominican Republic</strong> <span class="law-tag law-dr">DR</span>, <strong>Law No. 358-05 on the Protection of Consumer or User Rights</strong> <span class="law-tag law-dr">DR</span>, the <strong>Code of Ethics of the Dominican College of Dentists (COLODO)</strong> <span class="law-tag law-int">COLODO</span>, and other applicable regulations.</p>
+      </div>
+    </section>
+
+    <!-- 2. SERVICES -->
+    <section id="s2">
+      <h2><span class="sec-num">02</span> <span lang-section="es">Descripción de los Servicios</span><span lang-section="en">Description of Services</span></h2>
+      <div lang-section="es">
+        <p>Biodent Clínica Odontológica ofrece servicios odontológicos profesionales en Santo Domingo, República Dominicana, que incluyen:</p>
+      </div>
+      <div lang-section="en">
+        <p>Biodent Clínica Odontológica provides professional dental services in Santo Domingo, Dominican Republic, including:</p>
+      </div>
+      <div class="service-list-grid">
+        <div class="service-item">
+          <span class="service-item-icon">🦷</span>
+          <div><strong lang-section="es">Odontología General</strong><strong lang-section="en">General Dentistry</strong><span lang-section="es"> Revisiones y limpiezas</span><span lang-section="en"> Checkups & cleanings</span></div>
+        </div>
+        <div class="service-item">
+          <span class="service-item-icon">✨</span>
+          <div><strong lang-section="es">Odontología Estética</strong><strong lang-section="en">Cosmetic Dentistry</strong><span lang-section="es"> Carillas y blanqueamiento</span><span lang-section="en"> Veneers & whitening</span></div>
+        </div>
+        <div class="service-item">
+          <span class="service-item-icon">🔩</span>
+          <div><strong lang-section="es">Implantes Dentales</strong><strong lang-section="en">Dental Implants</strong><span lang-section="es"> Implantes completos</span><span lang-section="en"> Full implant placement</span></div>
+        </div>
+        <div class="service-item">
+          <span class="service-item-icon">😬</span>
+          <div><strong lang-section="es">Ortodoncia</strong><strong lang-section="en">Orthodontics</strong><span lang-section="es"> Brackets e Invisalign</span><span lang-section="en"> Braces & Invisalign</span></div>
+        </div>
+        <div class="service-item">
+          <span class="service-item-icon">🚑</span>
+          <div><strong lang-section="es">Urgencias Dentales</strong><strong lang-section="en">Dental Emergencies</strong><span lang-section="es"> Atención prioritaria</span><span lang-section="en"> Priority care</span></div>
+        </div>
+        <div class="service-item">
+          <span class="service-item-icon">👶</span>
+          <div><strong lang-section="es">Odontología Pediátrica</strong><strong lang-section="en">Pediatric Dentistry</strong><span lang-section="es"> Para niños</span><span lang-section="en"> For children</span></div>
+        </div>
+      </div>
+      <div lang-section="es">
+        <p>Este sitio web sirve como canal informativo y de solicitud de citas. <strong>Las consultas y tratamientos se realizan exclusivamente de forma presencial</strong> en nuestras instalaciones. La información del sitio no constituye consejo médico o diagnóstico dental.</p>
+        <div class="highlight-box warning">
+          <p><strong>⚠️ Aviso importante:</strong> El contenido de este sitio web, incluyendo descripciones de procedimientos y precios indicativos, es solo de referencia. El diagnóstico y plan de tratamiento definitivo se determina en consulta presencial con nuestros profesionales.</p>
+        </div>
+      </div>
+      <div lang-section="en">
+        <p>This website serves as an informational channel and appointment request platform. <strong>Consultations and treatments are performed exclusively in-person</strong> at our facilities. Information on the site does not constitute medical advice or dental diagnosis.</p>
+        <div class="highlight-box warning">
+          <p><strong>⚠️ Important notice:</strong> The content of this website, including procedure descriptions and indicative prices, is for reference only. The definitive diagnosis and treatment plan is determined at an in-person consultation with our professionals.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. APPOINTMENTS & CANCELLATIONS -->
+    <section id="s3">
+      <h2><span class="sec-num">03</span> <span lang-section="es">Citas, Cancelaciones y No-Presentaciones</span><span lang-section="en">Appointments, Cancellations & No-Shows</span></h2>
+      <div lang-section="es">
+        <h3>Solicitud de Citas</h3>
+        <p>Las citas pueden solicitarse a través del formulario del sitio web o por WhatsApp (+1 809 378-9651). Una solicitud de cita <strong>no confirma la reserva</strong> hasta que un miembro de nuestro equipo la confirme explícitamente.</p>
+        <h3>Política de Cancelación</h3>
+        <ul>
+          <li>Te pedimos que canceles o reprogrames tu cita con un mínimo de <strong>24 horas de anticipación</strong>.</li>
+          <li>Las cancelaciones pueden realizarse por WhatsApp, teléfono o en persona.</li>
+          <li>Cancelaciones con menos de 24 horas de anticipación pueden resultar en la pérdida del turno prioritario.</li>
+          <li>En caso de emergencia comprobable, haremos todo lo posible por acomodarte sin penalización.</li>
+        </ul>
+        <h3>No-Presentaciones</h3>
+        <p>Si no te presentas a tu cita sin previo aviso, nos reservamos el derecho de requerir un depósito para futuras reservas. Tres no-presentaciones consecutivas pueden resultar en la restricción del servicio de reserva en línea.</p>
+        <h3>Retrasos</h3>
+        <p>Si llegas con más de 15 minutos de retraso, puede ser necesario reprogramar tu cita para garantizar la calidad de atención a todos los pacientes.</p>
+      </div>
+      <div lang-section="en">
+        <h3>Appointment Requests</h3>
+        <p>Appointments can be requested through the website form or via WhatsApp (+1 809 378-9651). An appointment request <strong>does not confirm the booking</strong> until a member of our team explicitly confirms it.</p>
+        <h3>Cancellation Policy</h3>
+        <ul>
+          <li>We ask that you cancel or reschedule your appointment with a minimum of <strong>24 hours' notice</strong>.</li>
+          <li>Cancellations can be made via WhatsApp, phone, or in person.</li>
+          <li>Cancellations with less than 24 hours' notice may result in loss of priority scheduling.</li>
+          <li>In the case of a verifiable emergency, we will do our best to accommodate you without penalty.</li>
+        </ul>
+        <h3>No-Shows</h3>
+        <p>If you do not attend your appointment without prior notice, we reserve the right to require a deposit for future bookings. Three consecutive no-shows may result in restrictions on the online booking service.</p>
+        <h3>Late Arrivals</h3>
+        <p>If you arrive more than 15 minutes late, it may be necessary to reschedule your appointment to ensure quality care for all patients.</p>
+      </div>
+    </section>
+
+    <!-- 4. PAYMENT & PRICING -->
+    <section id="s4">
+      <h2><span class="sec-num">04</span> <span lang-section="es">Pagos, Precios y Facturación</span><span lang-section="en">Payments, Pricing & Billing</span></h2>
+      <div lang-section="es">
+        <h3>Precios</h3>
+        <p>Los precios indicados en el sitio web son <strong>precios de referencia en USD</strong> y pueden variar según la evaluación individual de cada paciente, la complejidad del caso y los materiales requeridos. El precio final se comunicará en la consulta presencial antes de iniciar cualquier tratamiento.</p>
+        <div class="highlight-box">
+          <p><strong>💡 Cotización gratuita:</strong> Ofrecemos una consulta inicial gratuita para evaluar tu caso y proporcionarte un presupuesto detallado sin compromiso, en cumplimiento con la <strong>Ley 358-05 Art. 53</strong> que garantiza el derecho del consumidor a información clara sobre precios. <span class="law-tag law-dr">Ley 358-05</span></p>
+        </div>
+        <h3>Métodos de Pago</h3>
+        <ul>
+          <li>Efectivo en pesos dominicanos (RD$) o dólares estadounidenses (USD)</li>
+          <li>Tarjetas de crédito/débito (Visa, Mastercard)</li>
+          <li>Transferencias bancarias locales</li>
+        </ul>
+        <h3>Planes de Pago</h3>
+        <p>Para tratamientos de mayor costo (ortodoncia, implantes), ofrecemos planes de pago sujetos a aprobación. Los términos del plan de pago se acuerdan por escrito antes del inicio del tratamiento.</p>
+        <h3>Política de Reembolsos</h3>
+        <p>Conforme a la <strong>Ley 358-05</strong> <span class="law-tag law-dr">RD</span> de protección al consumidor:</p>
+        <ul>
+          <li>Los pagos por consultas realizadas no son reembolsables.</li>
+          <li>Depósitos por tratamientos no iniciados serán reembolsados si la cancelación se realiza con al menos 48 horas de anticipación.</li>
+          <li>En caso de insatisfacción, evaluaremos cada caso individualmente conforme a los estándares profesionales del COLODO.</li>
+        </ul>
+      </div>
+      <div lang-section="en">
+        <h3>Pricing</h3>
+        <p>Prices shown on the website are <strong>reference prices in USD</strong> and may vary based on individual patient evaluation, case complexity, and required materials. The final price will be communicated at the in-person consultation before starting any treatment.</p>
+        <div class="highlight-box">
+          <p><strong>💡 Free quote:</strong> We offer a free initial consultation to evaluate your case and provide a detailed no-obligation estimate, in compliance with <strong>Law 358-05 Art. 53</strong> guaranteeing consumers' right to clear pricing information. <span class="law-tag law-dr">Law 358-05</span></p>
+        </div>
+        <h3>Payment Methods</h3>
+        <ul>
+          <li>Cash in Dominican pesos (RD$) or US dollars (USD)</li>
+          <li>Credit/debit cards (Visa, Mastercard)</li>
+          <li>Local bank transfers</li>
+        </ul>
+        <h3>Payment Plans</h3>
+        <p>For higher-cost treatments (orthodontics, implants), we offer payment plans subject to approval. Payment plan terms are agreed in writing before treatment begins.</p>
+        <h3>Refund Policy</h3>
+        <p>In accordance with <strong>Law 358-05</strong> <span class="law-tag law-dr">DR</span> on consumer protection:</p>
+        <ul>
+          <li>Payments for completed consultations are non-refundable.</li>
+          <li>Deposits for treatments not yet started will be refunded if cancellation is made at least 48 hours in advance.</li>
+          <li>In case of dissatisfaction, we will evaluate each case individually in accordance with COLODO professional standards.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 5. RESPONSIBILITIES -->
+    <section id="s5">
+      <h2><span class="sec-num">05</span> <span lang-section="es">Responsabilidades del Paciente</span><span lang-section="en">Patient Responsibilities</span></h2>
+      <div lang-section="es">
+        <p>Para garantizar la calidad y seguridad de tu atención dental, como paciente te comprometes a:</p>
+        <ul class="two-col-list">
+          <li>Proporcionar información médica completa y veraz sobre tu historial de salud</li>
+          <li>Informar sobre alergias a medicamentos o materiales dentales</li>
+          <li>Revelar medicamentos actuales que puedan afectar el tratamiento</li>
+          <li>Informar si estás embarazada o en período de lactancia</li>
+          <li>Seguir las instrucciones de cuidado post-tratamiento</li>
+          <li>Asistir a las citas de seguimiento programadas</li>
+          <li>Informar inmediatamente sobre cualquier complicación post-tratamiento</li>
+          <li>Tratar al personal con respeto y consideración</li>
+        </ul>
+        <div class="highlight-box important">
+          <p><strong>⚠️ Responsabilidad del paciente:</strong> Biodent Clínica Odontológica no se hace responsable de complicaciones derivadas de información médica incompleta o falsa proporcionada por el paciente, o del incumplimiento de las instrucciones post-tratamiento.</p>
+        </div>
+      </div>
+      <div lang-section="en">
+        <p>To ensure the quality and safety of your dental care, as a patient you agree to:</p>
+        <ul class="two-col-list">
+          <li>Provide complete and truthful medical information about your health history</li>
+          <li>Disclose allergies to medications or dental materials</li>
+          <li>Reveal current medications that may affect treatment</li>
+          <li>Inform us if you are pregnant or breastfeeding</li>
+          <li>Follow post-treatment care instructions</li>
+          <li>Attend scheduled follow-up appointments</li>
+          <li>Report any post-treatment complications immediately</li>
+          <li>Treat staff with respect and consideration</li>
+        </ul>
+        <div class="highlight-box important">
+          <p><strong>⚠️ Patient responsibility:</strong> Biodent Clínica Odontológica is not responsible for complications arising from incomplete or false medical information provided by the patient, or failure to follow post-treatment instructions.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. INTELLECTUAL PROPERTY -->
+    <section id="s6">
+      <h2><span class="sec-num">06</span> <span lang-section="es">Propiedad Intelectual</span><span lang-section="en">Intellectual Property</span></h2>
+      <div lang-section="es">
+        <p>Todo el contenido de este sitio web —incluyendo textos, imágenes, logotipos, diseños, gráficos, código fuente y estructura— es propiedad exclusiva de <strong>Biodent Clínica Odontológica</strong> o de sus proveedores de contenido, y está protegido por la <strong>Ley No. 65-00 sobre Derecho de Autor</strong> de la República Dominicana <span class="law-tag law-dr">RD</span> y las convenciones internacionales de propiedad intelectual.</p>
+        <h3>Está prohibido sin autorización escrita:</h3>
+        <ul>
+          <li>Reproducir, copiar o distribuir cualquier contenido del sitio</li>
+          <li>Usar el logotipo o nombre "Biodent" con fines comerciales</li>
+          <li>Hacer scraping o extracción automatizada de datos del sitio</li>
+          <li>Crear obras derivadas basadas en el contenido del sitio</li>
+        </ul>
+        <p>Para solicitar permisos de uso, contáctanos en <a href="mailto:hello@biodentdentalclinic.com">hello@biodentdentalclinic.com</a>.</p>
+      </div>
+      <div lang-section="en">
+        <p>All content on this website — including texts, images, logos, designs, graphics, source code, and structure — is the exclusive property of <strong>Biodent Clínica Odontológica</strong> or its content providers, and is protected by <strong>Law No. 65-00 on Copyright</strong> of the Dominican Republic <span class="law-tag law-dr">DR</span> and international intellectual property conventions.</p>
+        <h3>The following are prohibited without written authorization:</h3>
+        <ul>
+          <li>Reproducing, copying, or distributing any content from the site</li>
+          <li>Using the "Biodent" logo or name for commercial purposes</li>
+          <li>Scraping or automated data extraction from the site</li>
+          <li>Creating derivative works based on site content</li>
+        </ul>
+        <p>To request usage permissions, contact us at <a href="mailto:hello@biodentdentalclinic.com">hello@biodentdentalclinic.com</a>.</p>
+      </div>
+    </section>
+
+    <!-- 7. PRIVACY -->
+    <section id="s7">
+      <h2><span class="sec-num">07</span> <span lang-section="es">Privacidad y Protección de Datos</span><span lang-section="en">Privacy & Data Protection</span></h2>
+      <div lang-section="es">
+        <p>El tratamiento de tus datos personales se rige por nuestra <a href="privacy-policy.html"><strong>Política de Privacidad</strong></a>, que forma parte integrante de estos Términos de Servicio.</p>
+        <p>Cumplimos con la <strong>Ley No. 172-13 de Protección de Datos Personales</strong> <span class="law-tag law-dr">RD</span>, el <strong>RGPD</strong> <span class="law-tag law-eu">EU</span> para usuarios europeos, y la <strong>CCPA</strong> para usuarios de California. Al usar nuestros servicios, consientes el tratamiento de tus datos según lo descrito en nuestra Política de Privacidad.</p>
+        <p>Los <strong>registros médicos y datos de salud</strong> de los pacientes son confidenciales, se almacenan de forma segura, y solo se comparten con terceros con tu consentimiento expreso o por obligación legal.</p>
+      </div>
+      <div lang-section="en">
+        <p>The processing of your personal data is governed by our <a href="privacy-policy.html"><strong>Privacy Policy</strong></a>, which forms an integral part of these Terms of Service.</p>
+        <p>We comply with <strong>Law No. 172-13 on Protection of Personal Data</strong> <span class="law-tag law-dr">DR</span>, the <strong>GDPR</strong> <span class="law-tag law-eu">EU</span> for European users, and the <strong>CCPA</strong> for California users. By using our services, you consent to data processing as described in our Privacy Policy.</p>
+        <p><strong>Medical records and patient health data</strong> are confidential, stored securely, and only shared with third parties with your express consent or legal obligation.</p>
+      </div>
+    </section>
+
+    <!-- 8. USER CONDUCT -->
+    <section id="s8">
+      <h2><span class="sec-num">08</span> <span lang-section="es">Conducta del Usuario en el Sitio Web</span><span lang-section="en">User Conduct on the Website</span></h2>
+      <div lang-section="es">
+        <p>Al usar este sitio web, te comprometes a no:</p>
+        <ul>
+          <li>Usar el sitio para fines ilegales o contrarios a estos Términos</li>
+          <li>Intentar acceder sin autorización a sistemas o datos de la Clínica</li>
+          <li>Transmitir virus, malware u otro código dañino</li>
+          <li>Publicar o transmitir contenido ofensivo, difamatorio o que infrinja derechos de terceros</li>
+          <li>Suplantar a otras personas o entidades</li>
+          <li>Interferir con el funcionamiento normal del sitio</li>
+          <li>Usar bots o herramientas automatizadas sin autorización escrita</li>
+        </ul>
+        <p>Nos reservamos el derecho de bloquear el acceso a usuarios que incumplan estas condiciones.</p>
+      </div>
+      <div lang-section="en">
+        <p>By using this website, you agree not to:</p>
+        <ul>
+          <li>Use the site for illegal purposes or contrary to these Terms</li>
+          <li>Attempt to gain unauthorized access to Clinic systems or data</li>
+          <li>Transmit viruses, malware, or other harmful code</li>
+          <li>Post or transmit offensive, defamatory content, or content infringing third-party rights</li>
+          <li>Impersonate other persons or entities</li>
+          <li>Interfere with the normal operation of the site</li>
+          <li>Use bots or automated tools without written authorization</li>
+        </ul>
+        <p>We reserve the right to block access to users who violate these conditions.</p>
+      </div>
+    </section>
+
+    <!-- 9. LIMITATION OF LIABILITY -->
+    <section id="s9">
+      <h2><span class="sec-num">09</span> <span lang-section="es">Limitación de Responsabilidad</span><span lang-section="en">Limitation of Liability</span></h2>
+      <div lang-section="es">
+        <h3>Disponibilidad del Sitio</h3>
+        <p>No garantizamos que el sitio web esté disponible de forma ininterrumpida o libre de errores. No somos responsables de pérdidas derivadas de la indisponibilidad temporal del sitio.</p>
+        <h3>Exactitud de la Información</h3>
+        <p>Hacemos esfuerzos razonables para mantener la información del sitio actualizada y precisa, pero <strong>no garantizamos</strong> su exactitud, completitud o idoneidad para un propósito específico. La información sobre precios y tratamientos es orientativa.</p>
+        <h3>Servicios Médicos</h3>
+        <p>Conforme al <strong>Código de Ética Médica</strong> y la práctica odontológica profesional, nuestros profesionales actúan con la debida diligencia y conforme a los estándares de la profesión. Sin embargo, como en toda práctica médica, <strong>no podemos garantizar resultados específicos</strong> de tratamientos dentales. Los resultados pueden variar según factores individuales del paciente.</p>
+        <h3>Sitios Externos</h3>
+        <p>Este sitio puede contener enlaces a sitios de terceros (Google Maps, WhatsApp, etc.). No somos responsables del contenido o prácticas de privacidad de esos sitios.</p>
+        <div class="highlight-box">
+          <p><strong>Ley 358-05:</strong> Nada en estos Términos limita los derechos irrenunciables que te otorga la legislación de protección al consumidor de la República Dominicana. <span class="law-tag law-dr">Ley 358-05</span></p>
+        </div>
+      </div>
+      <div lang-section="en">
+        <h3>Site Availability</h3>
+        <p>We do not guarantee that the website will be available without interruption or free of errors. We are not responsible for losses arising from temporary unavailability of the site.</p>
+        <h3>Accuracy of Information</h3>
+        <p>We make reasonable efforts to keep website information current and accurate, but <strong>do not guarantee</strong> its accuracy, completeness, or suitability for any specific purpose. Information about prices and treatments is indicative.</p>
+        <h3>Medical Services</h3>
+        <p>In accordance with the <strong>Medical Code of Ethics</strong> and professional dental practice, our professionals act with due diligence and in accordance with professional standards. However, as with all medical practice, <strong>we cannot guarantee specific treatment outcomes</strong>. Results may vary based on individual patient factors.</p>
+        <h3>External Sites</h3>
+        <p>This site may contain links to third-party sites (Google Maps, WhatsApp, etc.). We are not responsible for the content or privacy practices of those sites.</p>
+        <div class="highlight-box">
+          <p><strong>Law 358-05:</strong> Nothing in these Terms limits the non-waivable rights granted to you by Dominican Republic consumer protection legislation. <span class="law-tag law-dr">Law 358-05</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. GOVERNING LAW -->
+    <section id="s10">
+      <h2><span class="sec-num">10</span> <span lang-section="es">Ley Aplicable y Jurisdicción</span><span lang-section="en">Governing Law & Jurisdiction</span></h2>
+      <div lang-section="es">
+        <p>Estos Términos se rigen e interpretan conforme a las leyes de la <strong>República Dominicana</strong>. Cualquier disputa que no pueda resolverse amigablemente se someterá a los tribunales competentes de <strong>Santo Domingo, Distrito Nacional</strong>, República Dominicana.</p>
+        <p>Para usuarios de la <strong>Unión Europea</strong> <span class="law-tag law-eu">EU</span>: Sin perjuicio de lo anterior, no se te priva de la protección otorgada por las disposiciones imperativas de la ley de tu país de residencia.</p>
+        <table class="tos-table">
+          <thead>
+            <tr>
+              <th>Jurisdicción</th>
+              <th>Ley / Normativa</th>
+              <th>Aplica a</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>🇩🇴 República Dominicana</td><td>Código Civil · Ley 358-05 · Ley 172-13</td><td>Todos los usuarios</td></tr>
+            <tr><td>🇪🇺 Unión Europea</td><td>RGPD · Directiva de Consumidores 2011/83/EU</td><td>Usuarios con residencia en la UE</td></tr>
+            <tr><td>🇺🇸 California, EE.UU.</td><td>CCPA / CPRA</td><td>Usuarios residentes en California</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div lang-section="en">
+        <p>These Terms are governed by and construed in accordance with the laws of the <strong>Dominican Republic</strong>. Any dispute that cannot be resolved amicably shall be submitted to the competent courts of <strong>Santo Domingo, Distrito Nacional</strong>, Dominican Republic.</p>
+        <p>For <strong>European Union</strong> users <span class="law-tag law-eu">EU</span>: Notwithstanding the above, you are not deprived of the protection afforded by the mandatory provisions of the law of your country of residence.</p>
+        <table class="tos-table">
+          <thead>
+            <tr>
+              <th>Jurisdiction</th>
+              <th>Law / Regulation</th>
+              <th>Applies To</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>🇩🇴 Dominican Republic</td><td>Civil Code · Law 358-05 · Law 172-13</td><td>All users</td></tr>
+            <tr><td>🇪🇺 European Union</td><td>GDPR · Consumer Directive 2011/83/EU</td><td>Users residing in the EU</td></tr>
+            <tr><td>🇺🇸 California, USA</td><td>CCPA / CPRA</td><td>California residents</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 11. MINORS -->
+    <section id="s11">
+      <h2><span class="sec-num">11</span> <span lang-section="es">Menores de Edad</span><span lang-section="en">Minors</span></h2>
+      <div lang-section="es">
+        <p>Los menores de 18 años deben estar acompañados por un padre, madre o tutor legal para recibir tratamiento dental. El padre o tutor legal deberá firmar el consentimiento informado en nombre del menor.</p>
+        <p>Para el uso del sitio web por parte de menores, se requiere la supervisión y consentimiento de un adulto responsable.</p>
+        <p>El acceso al sitio y la solicitud de citas a través del formulario web implica que el usuario confirma tener 18 años o más, o que actúa con el consentimiento de su tutor legal.</p>
+      </div>
+      <div lang-section="en">
+        <p>Minors under 18 must be accompanied by a parent or legal guardian to receive dental treatment. The parent or legal guardian must sign the informed consent on behalf of the minor.</p>
+        <p>For website use by minors, supervision and consent of a responsible adult is required.</p>
+        <p>Accessing the site and requesting appointments through the web form implies the user confirms they are 18 or older, or are acting with their legal guardian's consent.</p>
+      </div>
+    </section>
+
+    <!-- 12. CHANGES -->
+    <section id="s12">
+      <h2><span class="sec-num">12</span> <span lang-section="es">Modificaciones a los Términos</span><span lang-section="en">Changes to Terms</span></h2>
+      <div lang-section="es">
+        <p>Nos reservamos el derecho de modificar estos Términos de Servicio en cualquier momento. Los cambios serán efectivos inmediatamente tras su publicación en este sitio. La fecha de "Vigente desde" en el encabezado se actualizará con cada revisión.</p>
+        <p>El uso continuado del sitio web o de nuestros servicios después de la publicación de cambios constituye la aceptación de los nuevos Términos. Te recomendamos revisar esta página periódicamente.</p>
+        <p>Para cambios materiales que afecten significativamente tus derechos, haremos esfuerzos razonables para notificarte con antelación a través del sitio web.</p>
+      </div>
+      <div lang-section="en">
+        <p>We reserve the right to modify these Terms of Service at any time. Changes will be effective immediately upon posting on this site. The "Effective" date in the header will be updated with each revision.</p>
+        <p>Continued use of the website or our services after changes are posted constitutes acceptance of the new Terms. We recommend reviewing this page periodically.</p>
+        <p>For material changes that significantly affect your rights, we will make reasonable efforts to notify you in advance through the website.</p>
+      </div>
+    </section>
+
+    <!-- 13. CONTACT -->
+    <section id="s13">
+      <h2><span class="sec-num">13</span> <span lang-section="es">Contacto</span><span lang-section="en">Contact</span></h2>
+      <div class="contact-box">
+        <h3 lang-section="es">¿Dudas sobre estos Términos?</h3>
+        <h3 lang-section="en">Questions about these Terms?</h3>
+        <p lang-section="es">Si tienes preguntas, dudas o comentarios sobre estos Términos de Servicio, contáctanos:</p>
+        <p lang-section="en">If you have questions, concerns, or comments about these Terms of Service, contact us:</p>
+        <br/>
+        <p><strong>Biodent Clínica Odontológica</strong></p>
+        <p>📍 Center 2, Av. Rómulo Betancourt 1304, Santo Domingo 10111, RD</p>
+        <p>📞 <a href="tel:+18093789651">+1 (809) 378-9651</a></p>
+        <p>📧 <a href="mailto:hello@biodentdentalclinic.com">hello@biodentdentalclinic.com</a></p>
+        <p>💬 <a href="https://wa.me/18093789651" target="_blank" rel="noopener noreferrer">WhatsApp</a></p>
+        <br/>
+        <p lang-section="es">También puedes consultar nuestra <a href="privacy-policy.html">Política de Privacidad</a> para información sobre el tratamiento de tus datos personales.</p>
+        <p lang-section="en">You can also consult our <a href="privacy-policy.html">Privacy Policy</a> for information about the handling of your personal data.</p>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<!-- FOOTER -->
+<footer class="pp-footer">
+  <span>© 2026 Biodent Clínica Odontológica. <span lang-section="es">Todos los derechos reservados.</span><span lang-section="en">All rights reserved.</span></span>
+  <span>
+    <a href="privacy-policy.html" lang-section="es">Política de Privacidad</a>
+    <a href="privacy-policy.html" lang-section="en">Privacy Policy</a>
+    &nbsp;·&nbsp;
+    <a href="index.html" lang-section="es">← Volver al Inicio</a>
+    <a href="index.html" lang-section="en">← Back to Home</a>
+    &nbsp;·&nbsp;
+    <a href="index.html#book" lang-section="es">Reservar Cita</a>
+    <a href="index.html#book" lang-section="en">Book Appointment</a>
+  </span>
+</footer>
+
+<script>
+  function setLang(lang) {
+    document.body.className = 'lang-' + lang;
+    document.documentElement.lang = lang;
+    document.getElementById('btnES').classList.toggle('active', lang === 'es');
+    document.getElementById('btnEN').classList.toggle('active', lang === 'en');
+    document.getElementById('backLabel').textContent = lang === 'es' ? 'Volver al Inicio' : 'Back to Home';
+
+    const tocLabels = {
+      es: ['1. Aceptación','2. Servicios','3. Citas y Cancelaciones','4. Pagos y Precios','5. Responsabilidades','6. Propiedad Intelectual','7. Privacidad','8. Conducta del Usuario','9. Limitación de Responsabilidad','10. Ley Aplicable','11. Menores de Edad','12. Cambios','13. Contacto'],
+      en: ['1. Acceptance','2. Services','3. Appointments','4. Payments','5. Responsibilities','6. Intellectual Property','7. Privacy','8. User Conduct','9. Limitation of Liability','10. Governing Law','11. Minors','12. Changes','13. Contact']
+    };
+    document.querySelectorAll('#toc-list a').forEach((a, i) => {
+      a.textContent = tocLabels[lang][i] || a.textContent;
+    });
+    document.getElementById('toc-title').textContent = lang === 'es' ? 'Contenido' : 'Contents';
+  }
+
+  // Active TOC on scroll
+  const sections = document.querySelectorAll('.pp-content section[id]');
+  const tocLinks = document.querySelectorAll('.pp-toc a');
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        tocLinks.forEach(l => l.classList.remove('active'));
+        const a = document.querySelector('.pp-toc a[href="#' + e.target.id + '"]');
+        if (a) a.classList.add('active');
+      }
+    });
+  }, { threshold: 0.35, rootMargin: '-60px 0px -60% 0px' });
+  sections.forEach(s => obs.observe(s));
+</script>
+</body>
+</html>
