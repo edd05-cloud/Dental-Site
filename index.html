@@ -3205,7 +3205,7 @@
   <style>
     .qr-section {
       border-top: 1px solid rgba(255,255,255,0.08);
-      padding: 2.5rem 4rem;
+      padding: 2.5rem 4rem 5rem;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -3540,16 +3540,32 @@
   const stickyCta = document.getElementById('stickyCta');
   const heroSection = document.getElementById('hero');
   if (stickyCta && heroSection) {
+    // Show after hero scrolls out
     const stickyObs = new IntersectionObserver(entries => {
       entries.forEach(e => {
         if (!e.isIntersecting) {
           stickyCta.classList.add('visible');
-        } else if (e.isIntersecting) {
+        } else {
           stickyCta.classList.remove('visible');
         }
       });
     }, { threshold: 0.1 });
     stickyObs.observe(heroSection);
+
+    // Hide when footer is visible so it never covers the QR code
+    const footerEl = document.querySelector('footer');
+    if (footerEl) {
+      const footerObs = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            stickyCta.classList.remove('visible');
+          } else if (!heroSection.getBoundingClientRect().bottom > 0) {
+            stickyCta.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.05 });
+      footerObs.observe(footerEl);
+    }
   }
 
   // ── Service popularity bars animate on scroll ──
@@ -4378,7 +4394,8 @@ body.dark-mode .qr-label p { color: rgba(232,230,226,0.38); }
   #why { padding: 4rem 1.5rem; }
 
   /* Footer */
-  footer { padding: 3rem 1.5rem 1.5rem; padding-bottom: calc(1.5rem + 70px); }
+  footer { padding: 3rem 1.5rem 1.5rem; padding-bottom: calc(1.5rem + 80px); }
+  .qr-section { padding: 2rem 1.5rem calc(4rem + 80px); }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
   .qr-section { padding: 2rem 1.5rem 4rem; }
 
@@ -4474,7 +4491,8 @@ body.dark-mode .qr-label p { color: rgba(232,230,226,0.38); }
   .pricing-grid { grid-template-columns: 1fr; max-width: 340px; margin: 0 auto; }
 
   /* Footer */
-  footer { padding: 2.5rem 1rem; padding-bottom: calc(1rem + 70px); }
+  footer { padding: 2.5rem 1rem; padding-bottom: calc(1rem + 80px); }
+  .qr-section { padding: 1.5rem 1rem calc(3.5rem + 80px); }
   .qr-section { padding: 1.5rem 1rem 4rem; }
 
   /* Before/After */
@@ -4529,7 +4547,8 @@ body.dark-mode .qr-label p { color: rgba(232,230,226,0.38); }
   .form-group textarea { font-size: 0.85rem; padding: 0.65rem 0.85rem; }
 
   /* Footer */
-  footer { padding: 2rem 0.9rem; padding-bottom: calc(1rem + 70px); }
+  footer { padding: 2rem 0.9rem; padding-bottom: calc(1rem + 80px); }
+  .qr-section { padding: 1.2rem 0.9rem calc(3rem + 80px); }
 
   /* Sticky CTA */
   .sticky-cta-btn { padding: 0.5rem 0.85rem; font-size: 0.75rem; }
