@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+  <title>Política de Privacidad | Privacy Policy — Biodent Clínica Odontológica</title>
+  <meta name="description" content="Política de Privacidad y uso de cookies de Biodent Clínica Odontológica. Cumple con la Ley 172-13 RD, GDPR (UE) y CCPA (EE.UU.)."/>
+  <meta name="robots" content="noindex, follow"/>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦷</text></svg>"/>
+  <link rel="canonical" href="https://edd05-cloud.github.io/Dental-Site/privacy-policy.html"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/></noscript>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --cream: #f9f5f0;
+      --bone: #ede8e0;
+      --sage: #8aab96;
+      --sage-dark: #5c8a6e;
+      --charcoal: #2a2a2a;
+      --mid: #6b6b6b;
+      --light: #a8a8a8;
+      --accent: #c4a97a;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'DM Sans', system-ui, sans-serif;
+      background: var(--cream);
+      color: var(--charcoal);
+      line-height: 1.7;
+    }
+
+    /* ── NAV ── */
+    .pp-nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(249,245,240,0.96);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      padding: 1.2rem 6%;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 1rem;
+    }
+    .pp-nav-logo {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.4rem; font-weight: 600;
+      color: var(--charcoal); text-decoration: none;
+      letter-spacing: 0.03em;
+    }
+    .pp-nav-logo span { color: var(--sage-dark); }
+    .pp-nav-back {
+      font-size: 0.82rem; font-weight: 500;
+      color: var(--sage-dark); text-decoration: none;
+      display: flex; align-items: center; gap: 0.4rem;
+      transition: gap 0.2s;
+    }
+    .pp-nav-back:hover { gap: 0.7rem; }
+
+    /* ── LANG TOGGLE ── */
+    .lang-btns {
+      display: flex; gap: 0.4rem;
+    }
+    .lang-btn {
+      background: none; border: 1.5px solid var(--bone);
+      border-radius: 50px; padding: 0.3rem 0.75rem;
+      font-size: 0.75rem; font-weight: 600; cursor: pointer;
+      color: var(--mid); transition: all 0.2s;
+    }
+    .lang-btn.active {
+      background: var(--sage-dark); border-color: var(--sage-dark);
+      color: white;
+    }
+
+    /* ── HERO ── */
+    .pp-hero {
+      background: var(--charcoal);
+      padding: 4.5rem 6% 3.5rem;
+      position: relative; overflow: hidden;
+    }
+    .pp-hero::after {
+      content: '';
+      position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
+      background: linear-gradient(90deg, transparent, var(--sage), transparent);
+    }
+    .pp-hero-tag {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--sage);
+      margin-bottom: 1.2rem;
+    }
+    .pp-hero-tag::before { content: ''; width: 24px; height: 1px; background: var(--sage); display: block; }
+    .pp-hero h1 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      font-weight: 600; color: white; line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+    .pp-hero h1 em { color: var(--sage); font-style: italic; }
+    .pp-hero-meta {
+      display: flex; gap: 2rem; flex-wrap: wrap;
+      font-size: 0.8rem; color: rgba(255,255,255,0.5);
+      margin-top: 1.5rem;
+    }
+    .pp-hero-meta span { display: flex; align-items: center; gap: 0.4rem; }
+
+    /* ── LAYOUT ── */
+    .pp-layout {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 4rem 6% 6rem;
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    /* ── TOC SIDEBAR ── */
+    .pp-toc {
+      position: sticky; top: 90px;
+    }
+    .pp-toc h4 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--light);
+      margin-bottom: 1rem;
+    }
+    .pp-toc ul { list-style: none; }
+    .pp-toc li { margin-bottom: 0.4rem; }
+    .pp-toc a {
+      font-size: 0.8rem; color: var(--mid);
+      text-decoration: none; display: block;
+      padding: 0.3rem 0.6rem;
+      border-left: 2px solid transparent;
+      transition: all 0.2s; border-radius: 0 4px 4px 0;
+    }
+    .pp-toc a:hover,
+    .pp-toc a.active {
+      color: var(--sage-dark);
+      border-left-color: var(--sage-dark);
+      background: rgba(92,138,110,0.06);
+    }
+    .pp-toc-badges {
+      margin-top: 1.5rem;
+      display: flex; flex-direction: column; gap: 0.5rem;
+    }
+    .toc-badge {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      font-size: 0.65rem; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; padding: 4px 10px; border-radius: 20px;
+    }
+    .toc-badge.dr  { background: rgba(0,100,200,0.08); color: #0064c8; border: 1px solid rgba(0,100,200,0.15); }
+    .toc-badge.eu  { background: rgba(0,50,160,0.08);  color: #0032a0; border: 1px solid rgba(0,50,160,0.15); }
+    .toc-badge.us  { background: rgba(200,0,0,0.08);   color: #b00;    border: 1px solid rgba(200,0,0,0.15); }
+
+    /* ── CONTENT ── */
+    .pp-content section {
+      margin-bottom: 3.5rem;
+      padding-bottom: 3.5rem;
+      border-bottom: 1px solid var(--bone);
+    }
+    .pp-content section:last-child { border-bottom: none; margin-bottom: 0; }
+    .pp-content h2 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.75rem; font-weight: 600;
+      color: var(--charcoal); margin-bottom: 1rem;
+      line-height: 1.2;
+      display: flex; align-items: center; gap: 0.6rem;
+    }
+    .pp-content h2 .sec-num {
+      font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em;
+      background: var(--sage-dark); color: white;
+      padding: 2px 8px; border-radius: 20px;
+      font-family: 'DM Sans', sans-serif;
+    }
+    .pp-content h3 {
+      font-size: 1rem; font-weight: 600;
+      color: var(--charcoal); margin: 1.5rem 0 0.5rem;
+    }
+    .pp-content p {
+      font-size: 0.9rem; color: var(--mid);
+      margin-bottom: 0.9rem; line-height: 1.75;
+    }
+    .pp-content ul {
+      margin: 0.6rem 0 1rem 1.2rem;
+    }
+    .pp-content ul li {
+      font-size: 0.88rem; color: var(--mid);
+      margin-bottom: 0.45rem; line-height: 1.65;
+    }
+    .pp-content strong { color: var(--charcoal); }
+    .pp-content a { color: var(--sage-dark); }
+    .pp-content a:hover { color: var(--charcoal); }
+
+    /* ── LAW TAGS ── */
+    .law-tag {
+      display: inline-block;
+      font-size: 0.62rem; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; padding: 2px 8px; border-radius: 20px;
+      margin-left: 0.4rem; vertical-align: middle;
+    }
+    .law-dr { background: rgba(0,100,200,0.1); color: #0064c8; }
+    .law-eu { background: rgba(0,50,160,0.1);  color: #0032a0; }
+    .law-us { background: rgba(200,0,0,0.1);   color: #b00; }
+
+    /* ── COOKIE TABLE ── */
+    .cookie-table {
+      width: 100%; border-collapse: collapse; margin: 1rem 0;
+      font-size: 0.83rem;
+    }
+    .cookie-table th {
+      background: var(--charcoal); color: white;
+      padding: 0.6rem 0.9rem; text-align: left;
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .cookie-table th:first-child { border-radius: 10px 0 0 0; }
+    .cookie-table th:last-child  { border-radius: 0 10px 0 0; }
+    .cookie-table td {
+      padding: 0.7rem 0.9rem;
+      border-bottom: 1px solid var(--bone);
+      color: var(--mid);
+      vertical-align: top;
+    }
+    .cookie-table tr:hover td { background: rgba(92,138,110,0.04); }
+    .cookie-table .cat-essential { color: #5c8a6e; font-weight: 600; }
+    .cookie-table .cat-analytics  { color: #0064c8; font-weight: 600; }
+    .cookie-table .cat-marketing  { color: #b06000; font-weight: 600; }
+
+    /* ── RIGHTS GRID ── */
+    .rights-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1rem 0;
+    }
+    .right-card {
+      background: white; border: 1px solid var(--bone);
+      border-radius: 14px; padding: 1.1rem 1.2rem;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .right-card:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.07); transform: translateY(-2px); }
+    .right-card-icon { font-size: 1.4rem; margin-bottom: 0.5rem; }
+    .right-card h4 { font-size: 0.85rem; font-weight: 600; color: var(--charcoal); margin-bottom: 0.3rem; }
+    .right-card p  { font-size: 0.78rem; color: var(--mid); line-height: 1.55; margin: 0; }
+
+    /* ── CONTACT BOX ── */
+    .contact-box {
+      background: var(--charcoal);
+      border-radius: 20px; padding: 2rem 2.5rem;
+      color: white;
+    }
+    .contact-box h3 { color: white; font-size: 1.1rem; margin-bottom: 1rem; }
+    .contact-box p  { color: rgba(255,255,255,0.7); font-size: 0.87rem; margin-bottom: 0.5rem; }
+    .contact-box a  { color: var(--sage); }
+    .contact-box strong { color: white; }
+
+    /* ── FOOTER ── */
+    .pp-footer {
+      background: var(--charcoal);
+      padding: 2rem 6%;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 1rem;
+      font-size: 0.78rem; color: rgba(255,255,255,0.4);
+    }
+    .pp-footer a { color: rgba(255,255,255,0.5); text-decoration: none; }
+    .pp-footer a:hover { color: var(--sage); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .pp-layout { grid-template-columns: 1fr; gap: 2rem; }
+      .pp-toc { position: static; top: auto; display: none; }
+      .rights-grid { grid-template-columns: 1fr; }
+      .pp-hero-meta { gap: 1rem; }
+    }
+
+    /* ── LANGUAGE SECTIONS ── */
+    [lang-section="es"] { display: block; }
+    [lang-section="en"] { display: none; }
+    body.lang-en [lang-section="es"] { display: none; }
+    body.lang-en [lang-section="en"] { display: block; }
+    body.lang-es [lang-section="en"] { display: none; }
+    body.lang-es [lang-section="es"] { display: block; }
+  </style>
+</head>
+
+<body class="lang-es">
+
+<!-- NAV -->
+<nav class="pp-nav">
+  <a href="index.html" class="pp-nav-logo">Biodent <span>Clínica</span></a>
+  <div class="lang-btns">
+    <button class="lang-btn active" id="btnES" onclick="setLang('es')">🇩🇴 ES</button>
+    <button class="lang-btn" id="btnEN" onclick="setLang('en')">🇺🇸 EN</button>
+  </div>
+  <a href="index.html" class="pp-nav-back">← <span id="backLabel">Volver al Inicio</span></a>
+</nav>
+
+<!-- HERO -->
+<div class="pp-hero">
+  <div class="pp-hero-tag">Biodent Clínica Odontológica</div>
+  <h1>
+    <span lang-section="es">Política de <em>Privacidad</em></span>
+    <span lang-section="en">Privacy <em>Policy</em></span>
+  </h1>
+  <div class="pp-hero-meta">
+    <span>📅 <span lang-section="es">Última actualización: 14 de marzo, 2026</span><span lang-section="en">Last updated: March 14, 2026</span></span>
+    <span>📍 <span lang-section="es">Santo Domingo, República Dominicana</span><span lang-section="en">Santo Domingo, Dominican Republic</span></span>
+    <span>⚖️ <span lang-section="es">Ley 172-13 RD · RGPD UE · CCPA EE.UU.</span><span lang-section="en">DR Law 172-13 · EU GDPR · US CCPA</span></span>
+  </div>
+</div>
+
+<!-- MAIN LAYOUT -->
+<div class="pp-layout">
+
+  <!-- SIDEBAR TOC -->
+  <aside class="pp-toc" aria-label="Table of contents">
+    <h4 id="toc-title">Contenido</h4>
+    <ul id="toc-list">
+      <li><a href="#s1">1. Responsable</a></li>
+      <li><a href="#s2">2. Datos que recopilamos</a></li>
+      <li><a href="#s3">3. Cookies</a></li>
+      <li><a href="#s4">4. Uso de datos</a></li>
+      <li><a href="#s5">5. Bases legales</a></li>
+      <li><a href="#s6">6. Tus derechos</a></li>
+      <li><a href="#s7">7. Transferencias internacionales</a></li>
+      <li><a href="#s8">8. Seguridad</a></li>
+      <li><a href="#s9">9. Menores</a></li>
+      <li><a href="#s10">10. Cambios</a></li>
+      <li><a href="#s11">11. Contacto</a></li>
+    </ul>
+    <div class="pp-toc-badges">
+      <span class="toc-badge dr">🇩🇴 Ley 172-13</span>
+      <span class="toc-badge eu">🇪🇺 RGPD / GDPR</span>
+      <span class="toc-badge us">🇺🇸 CCPA / CPRA</span>
+    </div>
+  </aside>
+
+  <!-- CONTENT -->
+  <main class="pp-content">
+
+    <!-- INTRO -->
+    <section id="s0">
+      <div lang-section="es">
+        <p>En <strong>Biodent Clínica Odontológica</strong>, respetamos y protegemos tu privacidad. Esta Política de Privacidad explica cómo recopilamos, usamos, almacenamos y protegemos tu información personal cuando visitas nuestro sitio web <a href="https://edd05-cloud.github.io/Dental-Site/">biodentdentalclinic.com</a> o interactúas con nosotros a través de WhatsApp, teléfono o formularios.</p>
+        <p>Esta política cumple con la <strong>Ley 172-13 de Protección de Datos Personales</strong> de la República Dominicana, el <strong>Reglamento General de Protección de Datos (RGPD)</strong> de la Unión Europea, y la <strong>Ley de Privacidad del Consumidor de California (CCPA/CPRA)</strong>, dado que nuestro sitio recibe visitantes de múltiples países.</p>
+      </div>
+      <div lang-section="en">
+        <p>At <strong>Biodent Clínica Odontológica</strong>, we respect and protect your privacy. This Privacy Policy explains how we collect, use, store, and protect your personal information when you visit our website <a href="https://edd05-cloud.github.io/Dental-Site/">biodentdentalclinic.com</a> or interact with us via WhatsApp, phone, or forms.</p>
+        <p>This policy complies with <strong>Law No. 172-13 on Protection of Personal Data</strong> of the Dominican Republic, the EU <strong>General Data Protection Regulation (GDPR)</strong>, and the <strong>California Consumer Privacy Act (CCPA/CPRA)</strong>, given that our site receives visitors from multiple countries.</p>
+      </div>
+    </section>
+
+    <!-- 1. DATA CONTROLLER -->
+    <section id="s1">
+      <h2><span class="sec-num">01</span> <span lang-section="es">Responsable del Tratamiento</span><span lang-section="en">Data Controller</span></h2>
+      <div lang-section="es">
+        <p>El responsable del tratamiento de tus datos personales es:</p>
+        <ul>
+          <li><strong>Empresa:</strong> Biodent Clínica Odontológica</li>
+          <li><strong>Dirección:</strong> Center 2, Av. Rómulo Betancourt 1304, Santo Domingo 10111, República Dominicana</li>
+          <li><strong>Teléfono:</strong> <a href="tel:+18093789651">+1 (809) 378-9651</a></li>
+          <li><strong>Email:</strong> <a href="mailto:hello@biodentdentalclinic.com">hello@biodentdentalclinic.com</a></li>
+          <li><strong>WhatsApp:</strong> <a href="https://wa.me/18093789651">+1 (809) 378-9651</a></li>
+        </ul>
+      </div>
+      <div lang-section="en">
+        <p>The data controller responsible for your personal data is:</p>
+        <ul>
+          <li><strong>Company:</strong> Biodent Clínica Odontológica</li>
+          <li><strong>Address:</strong> Center 2, Av. Rómulo Betancourt 1304, Santo Domingo 10111, Dominican Republic</li>
+          <li><strong>Phone:</strong> <a href="tel:+18093789651">+1 (809) 378-9651</a></li>
+          <li><strong>Email:</strong> <a href="mailto:hello@biodentdentalclinic.com">hello@biodentdentalclinic.com</a></li>
+          <li><strong>WhatsApp:</strong> <a href="https://wa.me/18093789651">+1 (809) 378-9651</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 2. DATA COLLECTED -->
+    <section id="s2">
+      <h2><span class="sec-num">02</span> <span lang-section="es">Datos que Recopilamos</span><span lang-section="en">Data We Collect</span></h2>
+      <div lang-section="es">
+        <h3>Datos que nos proporcionas directamente</h3>
+        <ul>
+          <li><strong>Nombre completo</strong> — cuando completas el formulario de cita o nos contactas</li>
+          <li><strong>Número de teléfono</strong> — para confirmar citas y comunicación de seguimiento</li>
+          <li><strong>Mensaje / consulta</strong> — descripción del servicio solicitado</li>
+          <li><strong>Conversaciones de WhatsApp</strong> — cuando inicias comunicación por WhatsApp</li>
+        </ul>
+        <h3>Datos recopilados automáticamente</h3>
+        <ul>
+          <li><strong>Dirección IP</strong> — para seguridad y detección de fraude</li>
+          <li><strong>Tipo de navegador y dispositivo</strong> — para optimizar la visualización del sitio</li>
+          <li><strong>Páginas visitadas y duración</strong> — a través de cookies analíticas (solo con tu consentimiento)</li>
+          <li><strong>Fecha y hora de visita</strong></li>
+        </ul>
+        <p><em>No recopilamos datos de salud, datos biométricos ni números de tarjetas de crédito a través de este sitio web.</em></p>
+      </div>
+      <div lang-section="en">
+        <h3>Data you provide directly</h3>
+        <ul>
+          <li><strong>Full name</strong> — when completing the appointment form or contacting us</li>
+          <li><strong>Phone number</strong> — to confirm appointments and follow-up communication</li>
+          <li><strong>Message / inquiry</strong> — description of the requested service</li>
+          <li><strong>WhatsApp conversations</strong> — when you initiate communication via WhatsApp</li>
+        </ul>
+        <h3>Automatically collected data</h3>
+        <ul>
+          <li><strong>IP address</strong> — for security and fraud detection</li>
+          <li><strong>Browser and device type</strong> — to optimize site display</li>
+          <li><strong>Pages visited and duration</strong> — through analytics cookies (only with your consent)</li>
+          <li><strong>Date and time of visit</strong></li>
+        </ul>
+        <p><em>We do not collect health data, biometric data, or credit card numbers through this website.</em></p>
+      </div>
+    </section>
+
+    <!-- 3. COOKIES -->
+    <section id="s3">
+      <h2><span class="sec-num">03</span> <span lang-section="es">Cookies y Tecnologías de Seguimiento</span><span lang-section="en">Cookies &amp; Tracking Technologies</span></h2>
+      <div lang-section="es">
+        <p>Usamos cookies para mejorar tu experiencia. Según la <strong>Ley 172-13</strong> y el <strong>RGPD</strong>, las cookies que identifican a una persona se consideran datos personales y requieren tu consentimiento previo, excepto las estrictamente necesarias.</p>
+      </div>
+      <div lang-section="en">
+        <p>We use cookies to improve your experience. Under <strong>Law 172-13</strong> and <strong>GDPR</strong>, cookies that identify a person are considered personal data and require your prior consent, except strictly necessary ones.</p>
+      </div>
+      <table class="cookie-table">
+        <thead>
+          <tr>
+            <th lang-section="es">Categoría</th><th lang-section="en">Category</th>
+            <th lang-section="es">Cookie / Servicio</th><th lang-section="en">Cookie / Service</th>
+            <th lang-section="es">Finalidad</th><th lang-section="en">Purpose</th>
+            <th lang-section="es">Duración</th><th lang-section="en">Duration</th>
+            <th lang-section="es">Consentimiento</th><th lang-section="en">Consent</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="cat-essential" lang-section="es">Esencial</td><td class="cat-essential" lang-section="en">Essential</td>
+            <td>biodent-theme, biodent-cookie-prefs, biodent-cookie-consented</td>
+            <td lang-section="es">Guardar preferencias de tema oscuro y consentimiento</td><td lang-section="en">Save dark mode and consent preferences</td>
+            <td lang-section="es">1 año</td><td lang-section="en">1 year</td>
+            <td lang-section="es">No requerido</td><td lang-section="en">Not required</td>
+          </tr>
+          <tr>
+            <td class="cat-analytics" lang-section="es">Analítica</td><td class="cat-analytics" lang-section="en">Analytics</td>
+            <td>_ga, _gid (Google Analytics)</td>
+            <td lang-section="es">Analizar tráfico y comportamiento de usuarios en el sitio</td><td lang-section="en">Analyze site traffic and user behavior</td>
+            <td lang-section="es">2 años / 24h</td><td lang-section="en">2 years / 24h</td>
+            <td lang-section="es">Requerido</td><td lang-section="en">Required</td>
+          </tr>
+          <tr>
+            <td class="cat-marketing" lang-section="es">Marketing</td><td class="cat-marketing" lang-section="en">Marketing</td>
+            <td>_fbp (Meta Pixel)</td>
+            <td lang-section="es">Medir eficacia de campañas publicitarias</td><td lang-section="en">Measure advertising campaign performance</td>
+            <td lang-section="es">90 días</td><td lang-section="en">90 days</td>
+            <td lang-section="es">Requerido</td><td lang-section="en">Required</td>
+          </tr>
+          <tr>
+            <td class="cat-essential" lang-section="es">Funcional</td><td class="cat-essential" lang-section="en">Functional</td>
+            <td>biodent-banner-closed, sessionStorage</td>
+            <td lang-section="es">Recordar preferencias de sesión (banner de promo)</td><td lang-section="en">Remember session preferences (promo banner)</td>
+            <td lang-section="es">Sesión</td><td lang-section="en">Session</td>
+            <td lang-section="es">No requerido</td><td lang-section="en">Not required</td>
+          </tr>
+        </tbody>
+      </table>
+      <div lang-section="es">
+        <p>Puedes cambiar tus preferencias de cookies en cualquier momento haciendo clic en <strong>"Preferencias de Cookies"</strong> en el pie de página del sitio, o borrando las cookies de tu navegador.</p>
+      </div>
+      <div lang-section="en">
+        <p>You can change your cookie preferences at any time by clicking <strong>"Cookie Preferences"</strong> in the site footer, or by clearing cookies from your browser.</p>
+      </div>
+    </section>
+
+    <!-- 4. USE OF DATA -->
+    <section id="s4">
+      <h2><span class="sec-num">04</span> <span lang-section="es">Uso de tus Datos</span><span lang-section="en">How We Use Your Data</span></h2>
+      <div lang-section="es">
+        <p>Usamos tu información para:</p>
+        <ul>
+          <li>Gestionar y confirmar citas dentales solicitadas a través del formulario o WhatsApp</li>
+          <li>Responder a consultas y proporcionar información sobre nuestros servicios</li>
+          <li>Mejorar el rendimiento y experiencia del sitio web (con tu consentimiento, mediante analíticas)</li>
+          <li>Cumplir con obligaciones legales y contables</li>
+          <li>Enviarte recordatorios de citas (solo si has dado tu número de teléfono para este fin)</li>
+        </ul>
+        <p><strong>No vendemos, alquilamos ni compartimos tus datos personales con terceros</strong> para fines de marketing sin tu consentimiento explícito.</p>
+      </div>
+      <div lang-section="en">
+        <p>We use your information to:</p>
+        <ul>
+          <li>Manage and confirm dental appointments requested through the form or WhatsApp</li>
+          <li>Respond to inquiries and provide information about our services</li>
+          <li>Improve website performance and experience (with your consent, via analytics)</li>
+          <li>Comply with legal and accounting obligations</li>
+          <li>Send appointment reminders (only if you provided your phone number for this purpose)</li>
+        </ul>
+        <p><strong>We do not sell, rent, or share your personal data with third parties</strong> for marketing purposes without your explicit consent.</p>
+      </div>
+    </section>
+
+    <!-- 5. LEGAL BASIS -->
+    <section id="s5">
+      <h2><span class="sec-num">05</span> <span lang-section="es">Bases Legales del Tratamiento</span><span lang-section="en">Legal Basis for Processing</span></h2>
+      <div lang-section="es">
+        <p>Tratamos tus datos bajo las siguientes bases legales según la <strong>Ley 172-13</strong> <span class="law-tag law-dr">RD</span> y el <strong>RGPD Art. 6</strong> <span class="law-tag law-eu">EU</span>:</p>
+        <ul>
+          <li><strong>Consentimiento (Art. 7 RGPD / Ley 172-13):</strong> Para cookies analíticas y de marketing, y envío de comunicaciones comerciales.</li>
+          <li><strong>Ejecución de contrato:</strong> Para procesar la solicitud de cita que has realizado.</li>
+          <li><strong>Interés legítimo:</strong> Para la seguridad del sitio web y prevención de fraude.</li>
+          <li><strong>Obligación legal:</strong> Para cumplir con requisitos contables y fiscales.</li>
+        </ul>
+      </div>
+      <div lang-section="en">
+        <p>We process your data under the following legal bases per <strong>Law 172-13</strong> <span class="law-tag law-dr">DR</span> and <strong>GDPR Art. 6</strong> <span class="law-tag law-eu">EU</span>:</p>
+        <ul>
+          <li><strong>Consent (Art. 7 GDPR / Law 172-13):</strong> For analytics and marketing cookies, and sending commercial communications.</li>
+          <li><strong>Contract performance:</strong> To process the appointment request you have made.</li>
+          <li><strong>Legitimate interest:</strong> For website security and fraud prevention.</li>
+          <li><strong>Legal obligation:</strong> To comply with accounting and tax requirements.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 6. YOUR RIGHTS -->
+    <section id="s6">
+      <h2><span class="sec-num">06</span> <span lang-section="es">Tus Derechos</span><span lang-section="en">Your Rights</span></h2>
+      <div lang-section="es">
+        <p>Bajo la Ley 172-13 <span class="law-tag law-dr">RD</span>, el RGPD <span class="law-tag law-eu">EU</span> y la CCPA <span class="law-tag law-us">US</span>, tienes los siguientes derechos sobre tus datos personales:</p>
+      </div>
+      <div lang-section="en">
+        <p>Under Law 172-13 <span class="law-tag law-dr">DR</span>, GDPR <span class="law-tag law-eu">EU</span>, and CCPA <span class="law-tag law-us">US</span>, you have the following rights over your personal data:</p>
+      </div>
+      <div class="rights-grid">
+        <div class="right-card">
+          <div class="right-card-icon">👁️</div>
+          <h4 lang-section="es">Acceso</h4><h4 lang-section="en">Access</h4>
+          <p lang-section="es">Solicitar una copia de los datos personales que tenemos sobre ti.</p>
+          <p lang-section="en">Request a copy of the personal data we hold about you.</p>
+        </div>
+        <div class="right-card">
+          <div class="right-card-icon">✏️</div>
+          <h4 lang-section="es">Rectificación</h4><h4 lang-section="en">Rectification</h4>
+          <p lang-section="es">Corregir datos inexactos o incompletos.</p>
+          <p lang-section="en">Correct inaccurate or incomplete data.</p>
+        </div>
+        <div class="right-card">
+          <div class="right-card-icon">🗑️</div>
+          <h4 lang-section="es">Supresión ("derecho al olvido")</h4><h4 lang-section="en">Erasure ("right to be forgotten")</h4>
+          <p lang-section="es">Solicitar la eliminación de tus datos cuando ya no sean necesarios.</p>
+          <p lang-section="en">Request deletion of your data when it is no longer necessary.</p>
+        </div>
+        <div class="right-card">
+          <div class="right-card-icon">🚫</div>
+          <h4 lang-section="es">Oposición</h4><h4 lang-section="en">Objection</h4>
+          <p lang-section="es">Oponerte al tratamiento de tus datos para fines de marketing o interés legítimo.</p>
+          <p lang-section="en">Object to processing of your data for marketing or legitimate interest purposes.</p>
+        </div>
+        <div class="right-card">
+          <div class="right-card-icon">⏸️</div>
+          <h4 lang-section="es">Limitación</h4><h4 lang-section="en">Restriction</h4>
+          <p lang-section="es">Solicitar que limitemos el tratamiento de tus datos en ciertos casos.</p>
+          <p lang-section="en">Request that we restrict processing of your data in certain cases.</p>
+        </div>
+        <div class="right-card">
+          <div class="right-card-icon">📦</div>
+          <h4 lang-section="es">Portabilidad</h4><h4 lang-section="en">Portability</h4>
+          <p lang-section="es">Recibir tus datos en formato estructurado y legible por máquina (RGPD).</p>
+          <p lang-section="en">Receive your data in a structured, machine-readable format (GDPR).</p>
+        </div>
+        <div class="right-card">
+          <div class="right-card-icon">↩️</div>
+          <h4 lang-section="es">Retirar el Consentimiento</h4><h4 lang-section="en">Withdraw Consent</h4>
+          <p lang-section="es">Retirar tu consentimiento en cualquier momento sin afectar tratamientos anteriores.</p>
+          <p lang-section="en">Withdraw consent at any time without affecting prior processing.</p>
+        </div>
+        <div class="right-card">
+          <div class="right-card-icon">🏷️</div>
+          <h4 lang-section="es">No discriminación (CCPA)</h4><h4 lang-section="en">Non-discrimination (CCPA)</h4>
+          <p lang-section="es">No recibirás trato diferente por ejercer tus derechos de privacidad.</p>
+          <p lang-section="en">You will not receive different treatment for exercising your privacy rights.</p>
+        </div>
+      </div>
+      <div lang-section="es">
+        <p>Para ejercer cualquiera de estos derechos, contáctanos en <a href="mailto:hello@biodentdentalclinic.com">hello@biodentdentalclinic.com</a>. Responderemos dentro de los <strong>30 días hábiles</strong> establecidos por la Ley 172-13 y el RGPD.</p>
+      </div>
+      <div lang-section="en">
+        <p>To exercise any of these rights, contact us at <a href="mailto:hello@biodentdentalclinic.com">hello@biodentdentalclinic.com</a>. We will respond within <strong>30 business days</strong> as established by Law 172-13 and GDPR.</p>
+      </div>
+    </section>
+
+    <!-- 7. INTERNATIONAL TRANSFERS -->
+    <section id="s7">
+      <h2><span class="sec-num">07</span> <span lang-section="es">Transferencias Internacionales</span><span lang-section="en">International Transfers</span></h2>
+      <div lang-section="es">
+        <p>Algunos de nuestros proveedores de servicios (como Google Analytics) pueden procesar datos en servidores ubicados fuera de la República Dominicana, incluidos Estados Unidos y la Unión Europea. En tales casos:</p>
+        <ul>
+          <li>Para transferencias a la UE/EEE, nos aseguramos de que existan garantías adecuadas (Cláusulas Contractuales Estándar de la CE).</li>
+          <li>Para usuarios de California (CCPA), tienes el derecho de saber si tus datos son "vendidos" — confirmamos que <strong>no vendemos datos personales</strong>.</li>
+          <li>Según el <strong>RGPD Art. 46</strong>, las transferencias se realizan solo con salvaguardas apropiadas.</li>
+        </ul>
+      </div>
+      <div lang-section="en">
+        <p>Some of our service providers (such as Google Analytics) may process data on servers located outside the Dominican Republic, including the United States and European Union. In such cases:</p>
+        <ul>
+          <li>For transfers to the EU/EEA, we ensure adequate safeguards are in place (EC Standard Contractual Clauses).</li>
+          <li>For California users (CCPA), you have the right to know if your data is "sold" — we confirm we <strong>do not sell personal data</strong>.</li>
+          <li>Under <strong>GDPR Art. 46</strong>, transfers are made only with appropriate safeguards.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 8. SECURITY -->
+    <section id="s8">
+      <h2><span class="sec-num">08</span> <span lang-section="es">Seguridad de los Datos</span><span lang-section="en">Data Security</span></h2>
+      <div lang-section="es">
+        <p>Implementamos medidas técnicas y organizativas para proteger tus datos personales contra acceso no autorizado, pérdida o destrucción, incluyendo:</p>
+        <ul>
+          <li>Transmisión cifrada mediante HTTPS/TLS</li>
+          <li>Acceso restringido a datos personales solo al personal autorizado</li>
+          <li>Revisión periódica de nuestras prácticas de seguridad</li>
+          <li>No almacenamos datos de pago en nuestro sitio</li>
+        </ul>
+        <p>En caso de una violación de seguridad que afecte tus datos, te notificaremos en el plazo establecido por la ley aplicable.</p>
+      </div>
+      <div lang-section="en">
+        <p>We implement technical and organizational measures to protect your personal data against unauthorized access, loss, or destruction, including:</p>
+        <ul>
+          <li>Encrypted transmission via HTTPS/TLS</li>
+          <li>Access to personal data restricted to authorized personnel only</li>
+          <li>Periodic review of our security practices</li>
+          <li>We do not store payment data on our site</li>
+        </ul>
+        <p>In the event of a security breach affecting your data, we will notify you within the timeframe established by applicable law.</p>
+      </div>
+    </section>
+
+    <!-- 9. MINORS -->
+    <section id="s9">
+      <h2><span class="sec-num">09</span> <span lang-section="es">Menores de Edad</span><span lang-section="en">Minors</span></h2>
+      <div lang-section="es">
+        <p>Nuestros servicios están disponibles para personas de todas las edades, incluyendo odontología pediátrica. Sin embargo, <strong>no recopilamos intencionalmente datos personales de menores de 13 años</strong> sin el consentimiento verificable de un padre o tutor legal, conforme a la <strong>Ley 172-13</strong> y la normativa internacional COPPA (EE.UU.).</p>
+        <p>Si eres padre o tutor y crees que tu hijo ha proporcionado datos personales sin tu consentimiento, contáctanos para eliminarlos inmediatamente.</p>
+      </div>
+      <div lang-section="en">
+        <p>Our services are available to people of all ages, including pediatric dentistry. However, we <strong>do not intentionally collect personal data from children under 13</strong> without verifiable parental or legal guardian consent, in compliance with <strong>Law 172-13</strong> and COPPA (US) international regulations.</p>
+        <p>If you are a parent or guardian and believe your child has provided personal data without your consent, contact us for immediate deletion.</p>
+      </div>
+    </section>
+
+    <!-- 10. CHANGES -->
+    <section id="s10">
+      <h2><span class="sec-num">10</span> <span lang-section="es">Cambios a Esta Política</span><span lang-section="en">Changes to This Policy</span></h2>
+      <div lang-section="es">
+        <p>Podemos actualizar esta Política de Privacidad periódicamente para reflejar cambios en nuestras prácticas o en la legislación aplicable. Cuando realicemos cambios materiales, actualizaremos la fecha de "Última actualización" en esta página.</p>
+        <p>Te recomendamos revisar esta política periódicamente. El uso continuado del sitio web después de la publicación de cambios implica la aceptación de la nueva política.</p>
+      </div>
+      <div lang-section="en">
+        <p>We may update this Privacy Policy periodically to reflect changes in our practices or applicable law. When we make material changes, we will update the "Last updated" date on this page.</p>
+        <p>We recommend reviewing this policy periodically. Continued use of the website after changes are posted implies acceptance of the new policy.</p>
+      </div>
+    </section>
+
+    <!-- 11. CONTACT -->
+    <section id="s11">
+      <h2><span class="sec-num">11</span> <span lang-section="es">Contacto y Reclamaciones</span><span lang-section="en">Contact &amp; Complaints</span></h2>
+      <div class="contact-box">
+        <h3 lang-section="es">¿Preguntas sobre tu privacidad?</h3>
+        <h3 lang-section="en">Questions about your privacy?</h3>
+        <p lang-section="es">Para ejercer tus derechos, hacer preguntas o presentar una queja:</p>
+        <p lang-section="en">To exercise your rights, ask questions, or file a complaint:</p>
+        <p><strong lang-section="es">Email:</strong><strong lang-section="en">Email:</strong> <a href="mailto:hello@biodentdentalclinic.com">hello@biodentdentalclinic.com</a></p>
+        <p><strong lang-section="es">Teléfono:</strong><strong lang-section="en">Phone:</strong> <a href="tel:+18093789651">+1 (809) 378-9651</a></p>
+        <p><strong lang-section="es">Dirección:</strong><strong lang-section="en">Address:</strong> Center 2, Av. Rómulo Betancourt 1304, Santo Domingo 10111, RD</p>
+        <br/>
+        <p lang-section="es">Si no estás satisfecho con nuestra respuesta, puedes presentar una reclamación ante el <strong>Instituto Dominicano de las Telecomunicaciones (INDOTEL)</strong> o la autoridad de protección de datos de tu país de residencia (p.ej. la Autoridad de Protección de Datos de la UE correspondiente).</p>
+        <p lang-section="en">If you are not satisfied with our response, you may file a complaint with the <strong>Dominican Institute of Telecommunications (INDOTEL)</strong> or the data protection authority of your country of residence (e.g., the relevant EU Data Protection Authority).</p>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<!-- FOOTER -->
+<footer class="pp-footer">
+  <span>© 2026 Biodent Clínica Odontológica. <span lang-section="es">Todos los derechos reservados.</span><span lang-section="en">All rights reserved.</span></span>
+  <span>
+    <a href="index.html" lang-section="es">← Volver al Inicio</a>
+    <a href="index.html" lang-section="en">← Back to Home</a>
+    &nbsp;·&nbsp;
+    <a href="index.html#book" lang-section="es">Reservar Cita</a>
+    <a href="index.html#book" lang-section="en">Book Appointment</a>
+  </span>
+</footer>
+
+<script>
+  function setLang(lang) {
+    document.body.className = 'lang-' + lang;
+    document.documentElement.lang = lang;
+    document.getElementById('btnES').classList.toggle('active', lang === 'es');
+    document.getElementById('btnEN').classList.toggle('active', lang === 'en');
+    document.getElementById('backLabel').textContent = lang === 'es' ? 'Volver al Inicio' : 'Back to Home';
+    // Update TOC labels
+    const tocLabels = {
+      es: ['1. Responsable','2. Datos que recopilamos','3. Cookies','4. Uso de datos','5. Bases legales','6. Tus derechos','7. Transferencias','8. Seguridad','9. Menores','10. Cambios','11. Contacto'],
+      en: ['1. Data Controller','2. Data We Collect','3. Cookies','4. Use of Data','5. Legal Basis','6. Your Rights','7. Int\'l Transfers','8. Security','9. Minors','10. Changes','11. Contact']
+    };
+    document.querySelectorAll('#toc-list a').forEach((a,i) => {
+      a.textContent = tocLabels[lang][i] || a.textContent;
+    });
+    document.getElementById('toc-title').textContent = lang === 'es' ? 'Contenido' : 'Contents';
+  }
+
+  // Active TOC highlight on scroll
+  const sections = document.querySelectorAll('.pp-content section[id]');
+  const tocLinks = document.querySelectorAll('.pp-toc a');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        tocLinks.forEach(l => l.classList.remove('active'));
+        const active = document.querySelector('.pp-toc a[href="#' + e.target.id + '"]');
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { threshold: 0.4 });
+  sections.forEach(s => observer.observe(s));
+</script>
+</body>
+</html>
